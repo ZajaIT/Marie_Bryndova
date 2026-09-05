@@ -586,7 +586,16 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     .service-row:hover{padding-left:0}
     .service-row h3{font-size:27px}
     .device-grid{grid-template-columns:1fr;min-height:0}
-    .device-image{height:52svh}
+    .device-image{
+    height:auto;
+    overflow:visible;
+}
+
+.device-image img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
     .device-copy{padding:62px 5% 70px}
     .brand-panel{padding:40px 28px}
     .brand-item strong{font-size:27px}
