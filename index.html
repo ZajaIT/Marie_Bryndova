@@ -346,6 +346,9 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     gap:0;
     align-items:stretch;
 }
+    .brands-mobile{
+    display:none;
+}
 
 .brand-panel{
     padding:55px;
@@ -588,12 +591,12 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     .brand-panel{padding:40px 28px}
     .brand-item strong{font-size:27px}
 
-    .brands-copy{
-    order:2;
+.brands-desktop{
+    display:none;
 }
 
-.brands-image{
-    order:1;
+.brands-mobile{
+    display:block;
 }
     .dermic-inner{gap:42px}
     .dermic-list{grid-template-columns:1fr}
@@ -772,7 +775,7 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     </div>
 </section>
 
-<section class="brands">
+<section class="brands brands-desktop">
     <div class="brands-grid">
 
         <div class="brand-panel reveal">
@@ -801,6 +804,40 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
 
         <div class="brand-image reveal">
             <img src="lift.jpg" alt="Kosmetické ošetření">
+        </div>
+
+    </div>
+</section>
+
+    <section class="brands brands-mobile">
+    <div class="brands-grid">
+
+        <div class="brand-image reveal">
+            <img src="lift.jpg" alt="Kosmetické ošetření">
+        </div>
+
+        <div class="brand-panel reveal">
+
+            <div class="brand-item">
+                <small>Profesionální kosmetika</small>
+                <strong>SYN CARE</strong>
+            </div>
+
+            <div class="brand-item">
+                <small>Profesionální kosmetika</small>
+                <strong>LARENS</strong>
+            </div>
+
+            <div class="brand-item">
+                <small>Součást nabídky</small>
+                <strong>Poradenství</strong>
+            </div>
+
+            <div class="brand-item">
+                <small>Součást nabídky</small>
+                <strong>Prodej kosmetiky</strong>
+            </div>
+
         </div>
 
     </div>
