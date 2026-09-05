@@ -924,6 +924,11 @@ if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion
 }
 
 document.getElementById('year').textContent=new Date().getFullYear();
+
+    if(!window.location.hash){
+    window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+}
 </script>
 
 </body>
