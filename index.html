@@ -506,22 +506,28 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
 }
     .logo-sub{font-size:7px}
     .hamburger{display:block}
+
+    .desktop-book{
+    display:none;
+}
     .nav{
     position:fixed;
     top:var(--header-h);
-    right:-100%;
-    left:auto;
-    transform:none;
+    left:0;
+    right:auto;
+    transform:translateX(100%);
     width:100%;
     height:calc(100svh - var(--header-h));
     background:var(--cream);
     flex-direction:column;
     justify-content:center;
     gap:28px;
-    transition:right .35s ease;
+    transition:transform .35s ease;
     z-index:1001;
 }
-    .nav.active{right:0}
+    .nav.active{
+    transform:translateX(0);
+}
     .nav a{
     font-family:var(--font-ui);
     font-size:18px;
