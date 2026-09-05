@@ -62,7 +62,7 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     text-transform:uppercase;
     font-family:var(--font-ui);
 }
-.eyebrow::before{content:"";width:42px;height:1px;background:var(--gold)}
+
 .section-title{
     font-family:var(--font-display);
     font-size:clamp(42px,5vw,68px);
@@ -183,8 +183,9 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
 .hamburger.active span:nth-child(3){top:11px;transform:rotate(-45deg)}
 
 .hero{
-    min-height:100svh;
-    padding:var(--header-h) 0 0;
+    min-height:calc(100svh - var(--header-h));
+    margin-top:var(--header-h);
+    padding:0;
     display:grid;
     grid-template-columns:minmax(0,46%) minmax(0,54%);
     background:var(--cream);
