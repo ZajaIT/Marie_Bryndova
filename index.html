@@ -489,14 +489,29 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
     margin-top:24px;
     max-width:650px;
 }
-.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-template-rows:310px 310px;gap:12px}
-.gallery-grid figure{overflow:hidden}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    grid-template-rows:310px 310px;
+    gap:12px;
+}
+
+.gallery-grid figure{
+    overflow:hidden;
+}
+
 .gallery-grid img{
     height:100%;
     object-fit:cover;
 }
-.gallery-grid figure:first-child{grid-row:span 2}
-.gallery-grid figure:nth-child(4){grid-column:span 2}
+
+.gallery-grid figure:first-child{
+    grid-row:span 2;
+}
+
+.gallery-grid figure:nth-child(3){
+    grid-column:2;
+}
 
 .contact{padding:0;background:var(--black);color:#fff}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr}
@@ -1045,7 +1060,6 @@ section{padding:110px 0;scroll-margin-top:calc(var(--header-h) + 20px)}
         <div class="gallery-grid">
             <figure class="reveal"><img src="salon-interier-1.jpg" alt="Interiér Studia 11 ve Strakonicích"></figure>
             <figure class="reveal"><img src="salon-interier-2.jpg" alt="Posezení ve Studiu 11"></figure>
-            <figure class="reveal"><img src="salon-interier-3.jpg" alt="Kosmetické pracoviště Studio 11"></figure>
             <figure class="reveal"><img src="salon-interier-4.jpg" alt="Kosmetický salon Studio 11"></figure>
         </div>
     </div>
